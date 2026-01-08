@@ -57,18 +57,19 @@
         snapshot.forEach((childSnapshot) => {
             const d = childSnapshot.val();
             const fila = `<tr>
-                <td>${d.horadeEntrada}</td>
-                <td>${d.nombre}</td>
-                <td>${d.grupo}</td>
-                <td>${d.boleta}</td>
-                <td>${d.asunto}</td>
-            </tr>`;
-            cuerpo.innerHTML = fila + cuerpo.innerHTML; // Pone el más reciente arriba
-        });
+            <td>${d.horaEntrada || 'Sin fecha'}</td>
+            <td>${d.nombre || 'Sin nombre'}</td>
+            <td>${d.grupo || 'Sin grupo'}</td>
+            <td>${d.boleta || 'Sin boleta'}</td>
+            <td>${d.asunto || 'Sin asunto'}</td>
+        </tr>`;
+        cuerpo.innerHTML = fila + cuerpo.innerHTML;
     });
+});
 </script>
 </body>
 
 </html>
+
 
 
