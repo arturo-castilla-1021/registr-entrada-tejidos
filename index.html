@@ -37,10 +37,11 @@
         <select id="asunto">
             <option value="Servicio Social">Servicio Social</option>
             <option value="Egresado">Egresado</option>
-            <option value="Prácticas">Prácticas</option>
+            <option value="Prácticas Pofecionales">Prácticas Profecionales</option>
+            <option value="Prácticas Escolares">Prácticas escolares</option>
+            <option value="visita">visita</option>
             <option value="Clase">Clase</option>
-            <option value="Trabajos">Trabajos</option>
-            <option value="Asesorías">Asesorías</option>
+            <option value="Realizaciòn de Tareas y Asesorías">Trabajos</option>
         </select>
 
         <button type="submit" id="btnEnviar">Registrar Entrada</button>
@@ -72,7 +73,7 @@
             grupo: document.getElementById('grupo').value,
             boleta: document.getElementById('boleta').value,
             asunto: document.getElementById('asunto').value,
-            horaEntrada: new Date().toLocaleString('es-MX')
+            FechayHoradeEntrada: new Date().toLocaleString('es-MX')
         };
 
         database.ref('entradas').push(datos).then(() => {
@@ -86,3 +87,4 @@
 </body>
 
 </html>
+
