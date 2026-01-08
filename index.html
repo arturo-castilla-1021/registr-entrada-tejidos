@@ -73,7 +73,7 @@
             grupo: document.getElementById('grupo').value,
             boleta: document.getElementById('boleta').value,
             asunto: document.getElementById('asunto').value,
-            FechayHoradeEntrada: new Date().toLocaleString('es-MX')
+            HoradeEntrada: new Date().toLocaleString('es-MX')
         };
 
         database.ref('entradas').push(datos).then(() => {
@@ -87,6 +87,7 @@
 </body>
 
 </html>
+
 
 
 
