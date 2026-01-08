@@ -22,7 +22,7 @@
         <table id="tablaDatos">
             <thead>
                 <tr>
-                    <th>Fecha y Hora de Entrada</th>
+                    <th>fecha y Hora de Entrada</th>
                     <th>Nombre</th>
                     <th>Grupo</th>
                     <th>Boleta</th>
@@ -57,7 +57,7 @@
         snapshot.forEach((childSnapshot) => {
             const d = childSnapshot.val();
             const fila = `<tr>
-                <td>${d.fechayhoradeEntrada}</td>
+                <td>${d.horadeEntrada}</td>
                 <td>${d.nombre}</td>
                 <td>${d.grupo}</td>
                 <td>${d.boleta}</td>
@@ -70,4 +70,5 @@
 </body>
 
 </html>
+
 
